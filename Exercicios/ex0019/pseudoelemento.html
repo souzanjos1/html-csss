@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LINKS </title>
+    
+    <style>
+        /* # = id
+           . = Class
+           : = pesudo-classes
+           :: = peseudo - elemento
+           > = children
+           */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: rgb(0, 255, 115);
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:visited {
+            color: blue;
+        }
+        a:hover {
+           text-decoration: underline;
+           color: black; 
+        }
+        a:active {
+            color: yellow;
+
+        }
+        .especial {
+            background-color: rgb(116, 59, 59);
+        }
+        .especial::before {
+            content: "→";
+        }
+        .especial::after {
+            content: "←";
+            text-decoration: none;
+            font-weight: normal;
+           
+        }
+    </style>
+    
+</head>
+<body>
+   <h1>Personalizando links</h1>
+   <ul>
+       <li><a href="https://www.whatfontis.com/?s3" target="_blank">Repositório Github</a></li>
+       <li><a href="https://www.myfonts.com/" target="_blank" class="especial">Canal do youtube</a></li>
+       <li><a href="https://www.fontsquirrel.com/" target="_blank">Site do curso em vídeo</a></li>
+   </ul>
+</body>
+</html>
